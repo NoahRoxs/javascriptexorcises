@@ -1,0 +1,38 @@
+body{
+  background-color: #00008B;
+  color: white;
+  font-size: 31px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.topnav {
+  background-color: #0000CD;
+  overflow: hidden;
+  text-align: center;
+}
+
+.topnav a {
+  color: white;
+  text-align: center;
+  padding: 20px 21px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+h3 {
+    font-size: 22px;
+    font-size: 30px;
+    color: white;
+}

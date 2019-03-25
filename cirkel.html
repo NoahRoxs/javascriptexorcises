@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="Noah Roxs" content="Noah Roxs | GD1B">
+  <title>Javascript Exorcise</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+
+<body>
+<h4>Noah Roxs | GD1B</h4>
+
+<div class="topnav">
+  <a class="home" href="index.html">Home</a>
+  <a href="cirkel.html">Cirkel</a>
+  <a href="temperatuur.html">Temperatuur</a>
+  <a href="rechthoek.html">Rechthoek</a>
+</div>
+<br>
+<form>
+  Straal:<br>
+  <input id= "straal" type="text" name="straal"><br>
+  Oppervlakte:<br>
+  <div id = "opp"></div>
+  Omtrek:<br>
+  <div id = "omt"></div>
+  <button id = "knop" type="button" name="button"> Bereken</button>
+</form>
+
+    <script type= "text/Javascript">
+    let Straal = document.getElementById('straal');
+    let Oppervlakte = document.getElementById('opp');
+    let Omtrek = document.getElementById('omt');
+    let Knop = document.getElementById('knop');
+
+    Knop.addEventListener('click', function(){
+      if(Straal.value!=null){
+        Oppervlakte.innerHTML = Math.PI * Straal.value * Straal.value + " cm";
+        Omtrek.innerHTML = 2 * Math.PI * Straal.value + " cm";
+      }
+    });
+
+    </script>
+
+    <div class="validatie">
+      <br>
+      <footer>
+          <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+            <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Validatie HTML5"></a>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+            <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Validatie CSS"></a>
+        </footer>
+    </div>
+  </body>
+</html>

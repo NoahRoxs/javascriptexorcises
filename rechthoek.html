@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="Noah Roxs" content="Noah Roxs | GD1B">
+  <title>Javascript Exorcise</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+
+<body>
+<h4>Noah Roxs | GD1B</h4>
+
+<div class="topnav">
+  <a class="home" href="index.html">Home</a>
+  <a href="cirkel.html">Cirkel</a>
+  <a href="temperatuur.html">Temperatuur</a>
+  <a href="rechthoek.html">Rechthoek</a>
+</div>
+<br>
+<form>
+  Lengte rechthoek:<br>
+  <input id= "lengte" type="text" name="lengte"><br>
+  Breedte rechthoek:<br>
+  <input id= "breedte" type="text" name="breedte"><br>
+  <button id = "knop" type="button" name="button"> Bereken</button><br>
+
+  Oppervlakte:
+  <div id= "oppervlakte"></div>
+  Omtrek:
+  <div id= "omtrek"></div>
+
+</form>
+
+    <script type= "text/Javascript">
+    let Lengte = document.getElementById('lengte');
+    let Breedte = document.getElementById('breedte');
+    let Omtrek = document.getElementById('omtrek');
+    let Oppervlakte = document.getElementById('oppervlakte')
+    let Knop = document.getElementById('knop');
+
+    Knop.addEventListener('click', function(){
+      if(Lengte.value!=null && Breedte.value!=null){
+        Oppervlakte.innerHTML = Lengte.value * Breedte.value + " cm²";
+        Omtrek.innerHTML = Lengte.value * 2 + Breedte.value *2  + " cm²";
+      }
+    });
+
+
+    </script>
+    <br>
+      <footer>
+        <div class="validatie">
+          <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+            <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Validatie HTML5"></a>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+            <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Validatie CSS"></a>
+            </div>
+        </footer>
+
+  </body>
+</html>
